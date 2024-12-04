@@ -9,8 +9,6 @@ def main(p2: bool):
         if p2:
             for string in disabledStrings:
                 data = data.replace(string, "")
-        # for string in disabledStrings:
-        # data = data.replace(string, "removed")
         matches: list[str] = re.findall("mul\([0-9]+,[0-9]+\)", data)
         total = 0
         for match in matches:
